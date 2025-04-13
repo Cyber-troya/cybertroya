@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Biografías</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <!-- Header-->
+    <header>
+        <div class="logo">TROYANET</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="/">Láminas</a></li>
+                <li><a class="activo" href="biografías.html">Biografías</a></li>
+                <li><a href="animales.html">Animales</a></li>
+                <li><a href="plantas-árboles.html">Plantas y Árboles</a></li>
+                <li><a href="frutas-verduras.html">Frutas y Verduras</a></li>
+            </ul>
+        </nav>
+        <div class="search-main">
+            <input type="search" id="searchQuery" placeholder="Buscar una biografía..." />
+            <div id="searchResults"></div>
+            <button type="button" onclick="search()"><i class='bx bx-search bx-xs'></i></button>
+        </div>
+        <div class="menu-toggle">☰</div>
+    </header>
+
+    <!-- Principal-->
+    <main>
+        <section class="buttons">
+            <button id="precios">Precios</button>
+            <button id="faltantes">Faltantes</button>
+        </section>
+        <section class="list-container">
+            <ul class="list-two" id="list-two"></ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Cyber y Papeléria Troya</p>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main-two.js"></script>
+    <script src="assets/js/search.js"></script>
+</body>
+
+</html>
